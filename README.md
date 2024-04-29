@@ -10,12 +10,17 @@ The device's website states: "The FreeStyle Libre 2 sensor automatically capture
 
 This has implications! Check the plot below. The red dots represent the moments where the sensor is manually scanned by me, providing data for those specific times. The blue dots represent the normal 15-minute intervals that the device saves automatically. Without continuous scanning, the peak above 7.8 mmol/L would have been missed due to the sluggish recording rate of the sensor.
 
+![issue](https://github.com/Aminsinichi/Libre2/blob/main/pic/issue.png)
+
 Therefore, to accurately capture the dynamics of the blood glucose level, one should manually scan the device at shorter intervals, especially during critical periods (e.g., after a meal).
 
 ### Visualize Your Data:
 
 1. Visit this website and log in: [https://www.libreview.com/](https://www.libreview.com/). Ensure you use the same credentials as you do for the LibreLink app on your phone.
 2. As shown in the picture below, find and download your data.
+
+![libreview](https://github.com/Aminsinichi/Libre2/blob/main/pic/libreview.png)
+
 3. This will give you a CSV file containing several columns.
 4. Open a Jupyter Notebook and copy-paste the following code. Make sure to replace `The-Name-Of-Your-Downloaded-File` with the actual filename and place it in the same location as your notebook.
 5. Ensure the relevant packages are installed; otherwise, install them.  
@@ -78,3 +83,5 @@ display(date_dropdown, output_plot)
 ```
 ### Output Example
 The output of the code will appear as shown below, where you can select your date using a widget. If you hover your mouse over it, you can see each specific value for each data point.
+
+![output](https://github.com/Aminsinichi/Libre2/blob/main/pic/output.png)
